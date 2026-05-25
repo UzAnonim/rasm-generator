@@ -9,7 +9,7 @@ st.markdown("""
     <p style='text-align: center; color: gray;'>Xayolingizdagi rasmni yarating!</p>
 """, unsafe_allow_html=True)
 
-token = "sizning_stability_keyingiz"
+token = "sk-LxSc5hMm7u5IneXtDJy3DLkbiUg1a8gsoucV5DX42knGxN6R"
 
 prompt = st.text_input("📝 Rasm tavsifini yozing (inglizcha):")
 
