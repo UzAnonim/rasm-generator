@@ -40,5 +40,5 @@ if "artifacts" in result:
     st.success("✅ Rasm tayyor!")
 else:
     st.error(f"Xato: {result}")
-    else:
-        st.warning("⚠️ Tavsif yozing!")
+else:
+    st.warning("⚠️ Tavsif yozing!")
