@@ -33,8 +33,12 @@ if st.button("🚀 Rasm yarat", use_container_width=True):
                     "width": 1024,
                 }
             )
-            img_data = base64.b64decode(response.json()["artifacts"][0]["base64"])
-            st.image(img_data, caption=prompt, use_column_width=True)
-            st.success("✅ Rasm tayyor!")
+            result = response.json()
+if "artifacts" in result:
+    img_data = base64.b64decode(result["artifacts"][0]["base64"])
+    st.image(img_data, caption=prompt, use_column_width=True)
+    st.success("✅ Rasm tayyor!")
+else:
+    st.error(f"Xato: {result}")
     else:
         st.warning("⚠️ Tavsif yozing!")
