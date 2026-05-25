@@ -5,6 +5,7 @@ from PIL import Image
 import io
 
 st.title("🎨 AI Rasm Generator")
+st.title("Dilshodbek Olimjonov")
 
 token = "sk-LxSc5hMm7u5IneXtDJy3DLkbiUg1a8gsoucV5DX42knGxN6R"
 
